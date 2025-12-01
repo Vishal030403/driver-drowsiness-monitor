@@ -1,0 +1,48 @@
+driver_drowsiness_system/
+├── index.html
+├── style.css
+└── script.js
+
+
+dataset/
+ ├── train/
+ │   ├── drowsy/
+ │   └── alert/
+ ├── val/
+ │   ├── drowsy/
+ │   └── alert/
+ └── test/
+     ├── drowsy/
+     └── alert/
+
+
+driver drowsiness/
+│
+├── model.ipynb                         ← your training notebook
+├── driver_drowsiness_final_model.keras ← saved trained model
+├── requirements.txt                    ← list of dependencies
+│
+├── backend/
+│   ├── main.py                         ← FastAPI app
+│   ├── model_loader.py                 ← code to load and predict with model
+│   ├── static/                         ← optional (for serving frontend)
+│   └── uploads/                        ← (optional) uploaded images
+│
+└── frontend/
+    ├── index.html                      ← UI for uploading images or video
+    ├── script.js                       ← handles frontend logic
+    └── style.css                       ← styling
+
+
+driver drowsiness/
+├── backend/
+│   ├── main.py
+│   ├── utils/
+│   │   └── preprocess.py
+│   ├── model/
+│   │   └── driver_drowsiness_final_model.keras   <-- copy your saved model here
+│   ├── requirements.txt
+│   └── .env              (optional)
+├── frontend/
+│   └── index.html
+└── README.md
