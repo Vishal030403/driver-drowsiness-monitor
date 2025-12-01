@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env/
+*.env
+
+# Model files (too large)
+*.h5
+*.hdf5
+*.keras
+*.tflite
+*.pkl
+
+# Dataset
+dataset_split/
+data/
+*.csv
+*.zip
+*.mp4
+*.avi
+*.jpg
+*.png
+
+# Jupyter
+*.ipynb
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+# Ignore model files
+*.h5
+*.keras
+backend/model/
+driver_drowsiness_final_model.h5
+
+# Ignore datasets
+dataset_split/
+dataset/
+*.pkl
+
+# Ignore large media
+*.jpg
+*.mp4
