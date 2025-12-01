@@ -1,0 +1,24 @@
+how to open  database
+    1. open cmd 
+    2. C:\Users\Vishal>psql -h localhost -U postgres
+       Password for user postgres:
+    3. \l
+    4.  \c drowsiness_db;
+    5. \dt 
+    6. drowsiness_db=# SELECT * FROM users;
+    7. drowsiness_db=# SELECT * FROM detection_history;
+    8. drowsiness_db=# SELECT * FROM session_info  ;
+
+
+how to start frontend 
+    1. click on direct .html file, open it with live server 
+    2. use it as u like 
+
+
+how to start the backend 
+    1. navigate to the backend folder , 
+    2. hit uvicorn main:app --reload this command ,
+    3. INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+    4. open the link , for backend ,
+    5. also visit the documentation of the backend to http://127.0.0.1:8000/docs#/
+    
